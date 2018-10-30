@@ -13,7 +13,7 @@ function() {
     # Display the current namespace if `namespace` is true
     zstyle -s ':zsh-kubectl-prompt:' namespace namespace
     if [[ -z "$namespace" ]]; then
-        zstyle ':zsh-kubectl-prompt:' namespace true
+        zstyle ':zsh-kubectl-prompt:' namespace false
     fi
 
     # Check the stat command because it has a different syntax between GNU coreutils and FreeBSD.
